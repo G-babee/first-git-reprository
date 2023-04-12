@@ -12,10 +12,11 @@
     <!--This is TextView layout, with the text "Hello Gloria" as its description.
     It can be changed as needed. The other layouts allows users to design features
     using tools in the Layout editor as needed-->
+    <!--Comment on GIT repository-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Gloria!"
+        android:text="Hello Gloria, Welcome to GIT!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
