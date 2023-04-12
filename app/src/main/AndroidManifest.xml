@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is the AndroidManifest file which shows the important about the app-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--The information shown below defines the settings for the entire application,
+     by allowing the app to be backed up, defining data extraction rules, app icon,
+     app's name, supporting a text layout from right to left, theme and specifies
+      the targetApi of the application.-->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidWorld"
+        tools:targetApi="31">
+
+        <!--The information shown below explains the main activity of the application,
+        by showing me the name of the MainActivity and allowing the activity be launched
+        outside of the app. It also shows the MAIN action of the activity and a category
+         showing the activity is a LAUNCHER-->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
